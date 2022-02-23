@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Responsive admin dashboard</title>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content="width = device-width, initial-scale = 1.0">
+        <!-- This is the link to the style sheet -->
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div class="container">
+            <!-- THIS IS THE SIDE NAVIGATION BAR -->
+            <div class="navigation">
+                <ul>
+                    <li>
+                        <a href="">
+                            <span class="icon"><ion-icon  class = "my-icon" name="logo-apple"></ion-icon></span>
+                            <span class="title">BrysonTech</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            <span class="icon"><ion-icon  class = "my-icon" name="bulb-outline"></ion-icon></ion-icon></span>
+                            <span class="title">Dashboard</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            <span class="icon"><ion-icon class = "my-icon" name="people-outline"></ion-icon></span>
+                            <span class="title">Customer</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            <span class="icon"><ion-icon  class = "my-icon" name="chatbubble-outline"></ion-icon></span>
+                            <span class="title">Message</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            <span class="icon"><ion-icon  class = "my-icon" name="help-outline"></ion-icon></span>
+                            <span class="title">Help</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            <span class="icon"><ion-icon  class = "my-icon" name="settings-outline"></ion-icon></span>
+                            <span class="title">settings</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            <span class="icon"><ion-icon  class = "my-icon" name="lock-closed-outline"></ion-icon></span>
+                            <span class="title">Password</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            <span  id = "sign" class="icon"><ion-icon  class = "my-icon" name="log-out-outline"></ion-icon></span>
+                            <span class="title">Sign out</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+                <!-- This is the main container -->
+
+            <div class ="main">
+
+
+                <!-------- This is the top bar ----------->
+                <div class="topbar">
+                    <div class="toggle">
+                        <ion-icon name="menu-outline"></ion-icon>
+                    </div>
+                    <div class="search">
+                        <label>
+                            <input type="text" placeholder="Search Here">
+                            <ion-icon name="search-outline"></ion-icon>
+                            <ion-icon id = "dice" name="dice-outline"></ion-icon>
+                        </label>
+                    </div>
+                    <!-- user -->
+                    <div class="user">
+                        <img src="user.jpg" alt="">
+                    </div>
+                </div>
+
+                <!----------------- CARDS --------------->
+                <div class="card-box">
+                    <div class="card">
+                        <div>
+                            <div class="numbers">2,000</div>
+                            <div class="cardName">Daily views</div>
+                        </div>
+                        <div class="iconbx">
+                            <ion-icon name="eye-outline"></ion-icon>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div>
+                            <div class="numbers">500</div>
+                            <div class="cardName">sales</div>
+                        </div>
+                        <div class="iconbx">
+                            <ion-icon name="cart-outline"></ion-icon>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div>
+                            <div class="numbers">50</div>
+                            <div class="cardName">comments</div>
+                        </div>
+                        <div class="iconbx">
+                            <ion-icon name="chatbubbles-outline"></ion-icon>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div>
+                            <div class="numbers">$5,000</div>
+                            <div class="cardName">Earnings</div>
+                        </div>
+                        <div class="iconbx">
+                            <ion-icon name="wallet-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- THIS IS FOR THE ORDER LIST -->
+                <div class="details">
+                    <div class="recentOrders">
+                        <div class="cardHeader">
+                            <h2>Recent Orders</h2>
+                            <a href="" class="btn"> View All</a>
+                        </div>
+
+                        <!-- THis is the table -->
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Price</td>
+                                    <td>Payment</td>
+                                    <td>Status</td>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>Star Refrigerator</td>
+                                    <td>$1200</td>
+                                    <td>Paid</td>
+                                    <td>  <span class ="status inprogress">In Progress</span> </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Star Refrigerator</td>
+                                    <td>$1200</td>
+                                    <td>Paid</td>
+                                    <td>  <span class ="status delivered">Delivered</span> </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Star Refrigerator</td>
+                                    <td>$1200</td>
+                                    <td>Paid</td>
+                                    <td>  <span class ="status pending">Pending</span> </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Star Refrigerator</td>
+                                    <td>$1200</td>
+                                    <td>Paid</td>
+                                    <td>  <span class ="status return">Return</span> </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Star Refrigerator</td>
+                                    <td>$1200</td>
+                                    <td>Paid</td>
+                                    <td>  <span class ="status delivered">Delivered</span> </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Star Refrigerator</td>
+                                    <td>$1200</td>
+                                    <td>Paid</td>
+                                    <td>  <span class ="status pending">Pending</span> </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Star Refrigerator</td>
+                                    <td>$1200</td>
+                                    <td>Paid</td>
+                                    <td>  <span class ="status delivered">Delivered</span> </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Star Refrigerator</td>
+                                    <td>$1200</td>
+                                    <td>Paid</td>
+                                    <td>  <span class ="status inprogress">In Progress</span> </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Star Refrigerator</td>
+                                    <td>$1200</td>
+                                    <td>Paid</td>
+                                    <td>  <span class ="status return">Return</span> </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Star Refrigerator</td>
+                                    <td>$1200</td>
+                                    <td>Paid</td>
+                                    <td>  <span class ="status delivered">Delivered</span> </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Star Refrigerator</td>
+                                    <td>$1200</td>
+                                    <td>Paid</td>
+                                    <td>  <span class ="status pending">Pending</span> </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                    </div>
+
+                    <!-- NEW CUSTOMERS -->
+                    
+                    <div class="recentCustomers">
+                        <div class="cardHeader">
+                            <h2>Recent Customers</h2>
+                        </div>
+                        <table>
+                            <tr>
+                                <td width = "60px"> <div class="imgBx"> <img src="user.jpg" alt=""> </div> </td>
+                                <td> <h4>Bright <br> <span>Nigerian</span> </h4> </td>
+                            </tr>
+
+                            <tr>
+                                <td width = "60px"> <div class="imgBx"> <img src="user.jpg" alt=""> </div> </td>
+                                <td> <h4>Bright <br> <span>Nigerian</span> </h4> </td>
+                            </tr>
+
+                            <tr>
+                                <td width = "60px"> <div class="imgBx"> <img src="user.jpg" alt=""> </div> </td>
+                                <td> <h4>Bright <br> <span>Nigerian</span> </h4> </td>
+                            </tr>
+
+                            <tr>
+                                <td width = "60px"> <div class="imgBx"> <img src="user.jpg" alt=""> </div> </td>
+                                <td> <h4>Bright <br> <span>Nigerian</span> </h4> </td>
+                            </tr>
+
+                            <tr>
+                                <td width = "60px"> <div class="imgBx"> <img src="user.jpg" alt=""> </div> </td>
+                                <td> <h4>Bright <br> <span>Nigerian</span> </h4> </td>
+                            </tr>
+
+                            <tr>
+                                <td width = "60px"> <div class="imgBx"> <img src="user.jpg" alt=""> </div> </td>
+                                <td> <h4>Bright <br> <span>Nigerian</span> </h4> </td>
+                            </tr>
+
+                            <tr>
+                                <td width = "60px"> <div class="imgBx"> <img src="user.jpg" alt=""> </div> </td>
+                                <td> <h4>Bright <br> <span>Nigerian</span> </h4> </td>
+                            </tr>
+
+                            <tr>
+                                <td width = "60px"> <div class="imgBx"> <img src="user.jpg" alt=""> </div> </td>
+                                <td> <h4>Bright <br> <span>Nigerian</span> </h4> </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        
+
+
+        
+
+        <!-- This is the icon script -->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+        <!-- This is the javascript link -->
+        <script src = "main.js"></script>
+    </body>
+</html>
